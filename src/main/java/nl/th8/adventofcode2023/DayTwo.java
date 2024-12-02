@@ -28,9 +28,7 @@ public class DayTwo implements Day {
     public int solvePartOne() {
         int safeReports = 0;
         for (List<Integer> report : reports) {
-            boolean isSafe = isSafe(report);
-
-            if (isSafe)
+            if (isSafe(report))
                 safeReports++;
         }
         return safeReports;
@@ -40,9 +38,7 @@ public class DayTwo implements Day {
     public int solvePartTwo() {
         int safeReports = 0;
         for (List<Integer> report : reports) {
-            boolean isSafe = isSafe(report);
-
-            if (isSafe || applyProblemDampner(report))
+            if (isSafe(report) || applyProblemDampener(report))
                 safeReports++;
         }
         return safeReports;
@@ -65,7 +61,7 @@ public class DayTwo implements Day {
         return true;
     }
 
-    private boolean applyProblemDampner(List<Integer> report) {
+    private boolean applyProblemDampener(List<Integer> report) {
         for(int i = 0; i < report.size(); i++) {
             List<Integer> dampenedReport = new ArrayList<>(report);
             dampenedReport.remove(i);
