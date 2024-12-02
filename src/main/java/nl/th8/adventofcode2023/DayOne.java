@@ -3,10 +3,7 @@ package nl.th8.adventofcode2023;
 import nl.th8.adventofcode2023.utils.PuzzleInputParser;
 
 import java.nio.file.Path;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class DayOne implements Day {
     private final PuzzleInputParser puzzleInputParser;
