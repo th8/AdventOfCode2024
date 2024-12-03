@@ -1,6 +1,6 @@
-package nl.th8.adventofcode2023;
+package nl.th8.adventofcode2024;
 
-import nl.th8.adventofcode2023.utils.PuzzleInputParser;
+import nl.th8.adventofcode2024.utils.PuzzleInputParser;
 
 import java.nio.file.Path;
 import java.util.*;

@@ -1,4 +1,4 @@
-package nl.th8.adventofcode2023;
+package nl.th8.adventofcode2024;
 
 public interface Day {
 

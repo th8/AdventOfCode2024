@@ -1,4 +1,4 @@
-package nl.th8.adventofcode2023.utils;
+package nl.th8.adventofcode2024.utils;
 
 import java.io.*;
 import java.nio.file.Files;
@@ -46,6 +46,15 @@ public class PuzzleInputParser {
     public List<String> getInputAsStringList() {
         try(var fileStream = Files.lines(puzzleInputPath)) {
             return fileStream.toList();
+        } catch (IOException e) {
+            System.err.println(e.getMessage());
+            throw new IllegalArgumentException("Unable to read input file, I can't solve puzzles like this! Bye.");
+        }
+    }
+
+    public String getInputAsString() {
+        try {
+            return Files.readString(puzzleInputPath);
         } catch (IOException e) {
             System.err.println(e.getMessage());
             throw new IllegalArgumentException("Unable to read input file, I can't solve puzzles like this! Bye.");
