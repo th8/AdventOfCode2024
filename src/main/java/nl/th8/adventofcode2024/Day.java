@@ -2,9 +2,9 @@ package nl.th8.adventofcode2024;
 
 public interface Day {
 
-    int solvePartOne();
+    long solvePartOne();
 
-    int solvePartTwo();
+    long solvePartTwo();
 
     int getDayNumber();
 }

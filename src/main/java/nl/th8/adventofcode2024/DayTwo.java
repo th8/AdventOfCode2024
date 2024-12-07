@@ -25,7 +25,7 @@ public class DayTwo implements Day {
     }
 
     @Override
-    public int solvePartOne() {
+    public long solvePartOne() {
         int safeReports = 0;
         for (List<Integer> report : reports) {
             if (isSafe(report))
@@ -35,7 +35,7 @@ public class DayTwo implements Day {
     }
 
     @Override
-    public int solvePartTwo() {
+    public long solvePartTwo() {
         int safeReports = 0;
         for (List<Integer> report : reports) {
             if (isSafe(report) || applyProblemDampener(report))

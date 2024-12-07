@@ -22,7 +22,7 @@ public class DayOne implements Day {
         prepareLists();
     }
 
-    public int solvePartOne() {
+    public long solvePartOne() {
         int total = 0;
         for(int i = 0; i < leftList.size(); i++) {
             total += Math.abs(leftList.get(i) - rightList.get(i));
@@ -30,7 +30,7 @@ public class DayOne implements Day {
         return total;
     }
 
-    public int solvePartTwo() {
+    public long solvePartTwo() {
         //Create a lookup table for the amount of occurrences of a certain value in the rightList
         Map<Integer, Integer> rightListLookupTable = new HashMap<>();
         for(Integer i : rightList) {

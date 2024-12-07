@@ -26,7 +26,7 @@ public class DaySix implements Day {
     }
 
     @Override
-    public int solvePartOne() {
+    public long solvePartOne() {
         prepareInput();
 
         boolean isInBound = true;
@@ -58,7 +58,7 @@ public class DaySix implements Day {
     }
 
     @Override
-    public int solvePartTwo() {
+    public long solvePartTwo() {
         //We want to explore the default path from part one to try our new obstacles on. Fields not visited on that route are irrelevant as we may only place one obstacle.
         solvePartOne();
 

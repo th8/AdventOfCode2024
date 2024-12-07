@@ -26,7 +26,7 @@ public class DayFive implements Day {
     }
 
     @Override
-    public int solvePartOne() {
+    public long solvePartOne() {
         List<List<Integer>> validInstructions = new ArrayList<>();
         for (List<Integer> printInstruction : printInstructions) {
             Set<Integer> alreadyPrinted = new HashSet<>();
@@ -51,7 +51,7 @@ public class DayFive implements Day {
     }
 
     @Override
-    public int solvePartTwo() {
+    public long solvePartTwo() {
         List<List<Integer>> fixedInstructions = new ArrayList<>();
         for (List<Integer> printInstruction : printInstructions) {
             fixInvalidInstructions(printInstruction).ifPresent(fixedInstructions::add);

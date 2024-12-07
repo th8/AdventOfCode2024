@@ -29,13 +29,13 @@ public class DayThree implements Day {
     }
 
     @Override
-    public int solvePartOne() {
+    public long solvePartOne() {
         Pattern pattern = Pattern.compile("mul\\([0-9]{1,3},[0-9]{1,3}\\)");
         return runInstructions(pattern);
     }
 
     @Override
-    public int solvePartTwo() {
+    public long solvePartTwo() {
         Pattern pattern = Pattern.compile("(mul\\([0-9]{1,3},[0-9]{1,3}\\))|do\\(\\)|don't\\(\\)");
         return runInstructions(pattern);
     }
